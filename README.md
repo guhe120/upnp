@@ -111,24 +111,43 @@ Crash Info:
 
 
 (2648.4824): Access violation - code c0000005 (first chance)
+
 First chance exceptions are reported before any exception handling.
+
 This exception may be expected and handled.
+
 msvcrt!memcmp+0x90:
+
 00007ffa`6b6ab890 488b01          mov     rax,qword ptr [rcx] ds:00000002`663f1000=????????????????
+
 *** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\Program Files\Bitcoin\daemon\bitcoind.exe - 
+
 0:001> k
+
 Child-SP          RetAddr           Call Site
+
 00000000`0797de98 00000000`00efca10 msvcrt!memcmp+0x90
+
 00000000`0797dea0 00000000`00ef99a3 bitcoind!secp256k1_ecdsa_recover+0x1eb9e0
+
 00000000`0797df00 00000000`00efa005 bitcoind!secp256k1_ecdsa_recover+0x1e8973
+
 00000000`0797df80 00000000`00a840a1 bitcoind!secp256k1_ecdsa_recover+0x1e8fd5
+
 00000000`0797e070 00000000`00f84e07 bitcoind+0x940a1
+
 00000000`0797f370 00000000`00d3d99f bitcoind!secp256k1_ecdsa_recover+0x273dd7
+
 00000000`0797f660 00007ffa`6b68a8e6 bitcoind!secp256k1_ecdsa_recover+0x2c96f
+
 00000000`0797f870 00007ffa`6b68a9bc msvcrt!_callthreadstartex+0x1e
+
 00000000`0797f8a0 00007ffa`6b921fe4 msvcrt!_threadstartex+0x7c
+
 00000000`0797f8d0 00007ffa`6d7bf061 KERNEL32!BaseThreadInitThunk+0x14
+
 00000000`0797f900 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
 
 
 
